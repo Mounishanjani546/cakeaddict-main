@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Downloads/cake-shop-website-template1/cake-shop-website-template/scss"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
