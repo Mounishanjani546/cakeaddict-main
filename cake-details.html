@@ -192,7 +192,7 @@
             </form>
         </div>
         <div class="cake-image">
-            <img id="cake-img" src="" alt="Cake Image">
+            <img id="cake-img" src="cakeImg.src" alt="Cake Image">
         </div>
     </div>
 
@@ -201,9 +201,31 @@
         const urlParams = new URLSearchParams(window.location.search);
         const cakeName = urlParams.get('cake');
         const cakePrices = {
-            'Chocolate Cake': 25.00,
-            'Vanilla Cake': 20.00,
-            'Red Velvet Cake': 30.00
+            'pull me up cake':500.00,
+            'half cakes':700.00,
+            'chocolate rasp dad':800.00,
+            'rasmalai':1000.00,
+            'brownie':1000.00,
+            'dream cake': 600.00,
+            'happy anni': 2000.00,
+            'cupcake':500.00,
+            'mango': 350.00,
+            'jarcake': 600.00,
+            'mousse': 2000.00,
+            'mother':500.00,
+            'red2': 350.00,
+            'personal cupcake':500.00,
+            'Cartoon Cakes': 350.00,
+
+            'cream cake':500.00,
+            'brown':700.00,
+            'red velvet':800.00,
+            'bomb cake':1000.00,
+            'pinata cake':1000.00,
+            'chococake': 600.00,
+            'gourmet': 2000.00,
+            'photopulling cake':500.00,
+            'fruit cake': 350.00
         };
 
         // Set the cake title and image based on the selected cake
@@ -213,18 +235,103 @@
         const cakeImg = document.getElementById('cake-img');
 
         switch (cakeName) {
-            case 'Chocolate Cake':
-                cakeImg.src = 'cake1.jpg';
-                cakeImg.alt = 'Chocolate Cake';
+            case 'cream cake':
+                cakeImg.src = 'img/cream cake.webp';
+                cakeImg.alt = 'cream cake';
                 break;
-            case 'Vanilla Cake':
-                cakeImg.src = 'cake2.jpg';
-                cakeImg.alt = 'Vanilla Cake';
+            case 'brown':
+                cakeImg.src = 'img/brown.webp';
+                cakeImg.alt = 'brown';
                 break;
-            case 'Red Velvet Cake':
-                cakeImg.src = 'cake3.jpg';
-                cakeImg.alt = 'Red Velvet Cake';
+            case 'red velvet':
+                cakeImg.src = 'img/red velvet.webp';
+                cakeImg.alt = 'red velvet';
+                break; 
+            case 'bomb cake':
+                cakeImg.src = 'img/bomb cake.webp';
+                cakeImg.alt = 'bomb cake';
+                break; 
+            case 'pinata cake':
+                cakeImg.src = 'img/pinata cake.webp';
+                cakeImg.alt = 'pinata cake';
+                break; 
+            case 'chococake':
+                cakeImg.src = 'img/chococake.webp';
+                cakeImg.alt = 'chococake';
+                break; 
+            case 'gourmet':
+                cakeImg.src = 'img/gourmet.webp';
+                cakeImg.alt = 'gourmet';
                 break;
+            case 'photopulling cake':
+                cakeImg.src = 'img/photopulling cake.webp';
+                cakeImg.alt = 'photopulling cake';
+                break;
+            case 'fruit cake':
+                cakeImg.src = 'img/fruit cake.webp';
+                cakeImg.alt = 'fruit cake';
+                break;
+            case 'pull me up cake':
+                cakeImg.src = 'img/pull me up cake.webp';
+                cakeImg.alt = 'pull me up cake';
+                break;
+            case 'half cakes':
+                cakeImg.src = 'img/half cakes.webp';
+                cakeImg.alt = 'half cakes';
+                break;
+            case 'chocolate rasp dad':
+                cakeImg.src = 'img/chocolate rasp dad';
+                cakeImg.alt = 'chocolate rasp dad';
+                break; 
+            case 'rasmalai':
+                cakeImg.src = 'img/rasmalai.webp';
+                cakeImg.alt = 'rasmalai';
+                break; 
+            case 'brownie':
+                cakeImg.src = 'img/brownie.webp';
+                cakeImg.alt = 'brownie';
+                break; 
+            case 'dream cake':
+                cakeImg.src = 'img/dream cake.webp';
+                cakeImg.alt = 'dream cake';
+                break; 
+            case 'happy anni':
+                cakeImg.src = 'img/happy anni.webp';
+                cakeImg.alt = 'happy anni';
+                break;
+            case 'cupcake':
+                cakeImg.src = 'img/cupcake.webp';
+                cakeImg.alt = 'cupcake';
+                break;
+            case 'mango':
+                cakeImg.src = 'img/mango.webp';
+                cakeImg.alt = 'mango';
+                break;
+            case 'jarcake':
+                cakeImg.src = 'img/jarcake.webp';
+                cakeImg.alt = 'jarcake';
+                break;
+            case 'mousse':
+                cakeImg.src = 'img/mousse.webp';
+                cakeImg.alt = 'mousse';
+                break;
+            case 'mother':
+                cakeImg.src = 'img/mother.webp';
+                cakeImg.alt = 'mother';
+                break; 
+            case 'red2':
+                cakeImg.src = 'img/red2.webp';
+                cakeImg.alt = 'red2';
+                break; 
+            case 'personal cupcake':
+                cakeImg.src = 'img/personal cupcake.webp';
+                cakeImg.alt = 'personal cupcake';
+                break; 
+            case 'Cartoon Cakes':
+                cakeImg.src = 'img/Cartoon Cakes.webp';
+                cakeImg.alt = 'Cartoon Cakes';
+                break; 
+            
             // Add cases for other cakes as needed
             default:
                 cakeImg.src = '';
