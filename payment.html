@@ -132,7 +132,9 @@
           
           <textarea id="billingAddress" required></textarea>
           
-          <button type="submit">Submit Payment</button>
+          <div class="button-container">
+            <button onclick="navigateToOrderSuccess()">Pay</button>
+        </div>
         </form>
       </div>
       <script src="script.js"></script>
@@ -194,7 +196,11 @@
       }
       
     </style>
-    
+    <script>
+      function navigateToOrderSuccess() {
+            window.location.href = 'order-success.html';
+        }
+    </script>
     </body>
 </html>
     
