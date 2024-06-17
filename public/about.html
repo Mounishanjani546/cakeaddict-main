@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CakeZone - Cake Shop Website Template</title>
+    <title>CakeAddict</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -39,7 +39,7 @@
                     <i class="bi bi-envelope fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase mb-1">Email Us</h6>
-                        <span>info@example.com</span>
+                        <span>CakeAddict@gmail.com</span>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase mb-1">Call Us</h6>
-                        <span>+012 345 6789</span>
+                        <span>+91 9390211564</span>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>CakeZone</h1>
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>CakeAddict</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -78,6 +78,7 @@
                 <a href="about.html" class="nav-item nav-link active">About Us</a>
                 <a href="menu.html" class="nav-item nav-link">Menu & Pricing</a>
                 <a href="team.html" class="nav-item nav-link">Master Chefs</a>
+                <a href="Signin.html" class="nav-item nav-link">Signin</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -111,7 +112,7 @@
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
                 <h2 class="text-primary font-secondary">About Us</h2>
-                <h1 class="display-4 text-uppercase">Welcome To CakeZone</h1>
+                <h1 class="display-4 text-uppercase">Welcome To CakeAddict</h1>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
@@ -199,14 +200,156 @@
     <!-- Facts End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark bg-img text-secondary" style="margin-top: 135px">
+   
+   
+
+    <!-- Template Javascript -->
+    <div class="myCard">
+        <div class="innerCard">
+            <div class="frontSide">
+                <div class="img-box">
+                    <img width="700" height="600" src="img/card.jpg" alt="">
+                </div>
+                <p class="title"></p>
+            </div>
+            <div class="backSide">
+                <div class="img-box">
+                    <img width="700" height="600" src="img/cake.jpg" alt="">
+                <p class="title"></p>
+                
+            </div>
+        </div>
+    </div>
+    <style>
+        .myCard {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+    </style>
+         About <span>Us</span>
+        </h2>
+    </div>
+                    Bakingo, where every bite tells a story of quality, passion, and perfection. 
+                    With a mission to bring Western desserts to everyone at more desirable prices, our Cakes 
+                    and Desserts are more than just a treat; they are a blissful experience crafted with love to 
+                    make your celebrations memorable.
+                    <br>
+                    Who We Are:
+                    <br>
+                    Founded in 2016 in Gurugram, Bakingo has expanded to encompass 75 kitchens across 15+ cities,
+                    serving 200+ unique cakes and desserts, which is a testament to our commitment to quality,
+                    innovation, and customer delight. Our journey of becoming India's National Bakery Brand is
+                    marked by a relentless pursuit of baking excellence, underpinned by impeccable processes and
+                    advanced technology. With every bite, Bakingo promises a treat, an experience of joy, nostalgia,
+                    and the blissful essence of life's sweetest moments.
+                    <br>
+
+                    Our Ethos:
+                    <br>
+                    At Bakingo, everything revolves around three core values: Quality, Innovation, and 
+                    Customer Satisfaction. Driven by a deep-seated passion for perfection and an 
+                    unyielding dedication to growth, we are charting a new course in culinary brilliance. 
+                    Our commitment to sustainability, from local sourcing to minimising waste, guides us as we 
+                    make pivotal strides with our state-of-the-art kitchen.
+                </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark bg-img text-secondary" style="margin-top: 135px">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 mt-lg-n5">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary border-inner p-4">
                         <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>CakeZone</h1>
+                            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>CakeAddict</h1>
                         </a>
                         <p class="mt-3">Lorem diam sit erat dolor elitr et, diam lorem justo labore amet clita labore stet eos magna sit. Elitr dolor eirmod duo tempor lorem, elitr clita ipsum sea. Nonumy rebum et takimata ea takimata amet gubergren, erat rebum magna lorem stet eos. Diam amet et kasd eos duo dolore no.</p>
                     </div>
@@ -217,15 +360,15 @@
                             <h4 class="text-primary text-uppercase mb-4">Get In Touch</h4>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 Street, New York, USA</p>
+                                <p class="mb-0">JublieeHills,NIC,Hyderabd</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">CakeAddict@gmail.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+012 345 67890</p>
+                                <p class="mb-0">+91 9390211564</p>
                             </div>
                             <div class="d-flex mt-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
@@ -245,8 +388,9 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <h4 class="text-primary text-uppercase mb-4">Newsletter</h4>
-                            <p>Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+                            <h4 class="text-primary text-uppercase mb-4">Subscribes to Newsletter</h4>
+                            <p>Show us some love ❤
+                                & connect with us!</p>
                             <form action="">
                                 <div class="input-group">
                                     <input type="text" class="form-control border-white p-3" placeholder="Your Email">
@@ -261,7 +405,7 @@
     </div>
     <div class="container-fluid text-secondary py-4" style="background: #111111;">
         <div class="container text-center">
-            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
+            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">CakeAddict</a>. All Rights Reserved. 
 			
 			<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 			Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
@@ -282,8 +426,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
 </body>
 
 </html>
