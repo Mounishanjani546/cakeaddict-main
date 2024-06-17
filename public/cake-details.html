@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CakeZone - Cake Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-primary border-inner py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>CakeZone</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>+012 345 6789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>CakeZone</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="menu.html" class="nav-item nav-link active">Menu & Pricing</a>
+                <a href="team.html" class="nav-item nav-link">Master Chefs</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="service.html" class="dropdown-item">Our Service</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark bg-img p-5 mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-uppercase text-white">Menu & Pricing</h1>
+                <a href="">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="">Menu & Pricing</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #4d2600;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .cake-details {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+        .cake-details h2 {
+            color: #4d2600;
+        }
+        .cake-details form {
+            display: flex;
+            flex-direction: column;
+        }
+        .cake-details label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #8b4513;
+        }
+        .cake-details input, .cake-details textarea {
+            padding: 10px;
+            border: 1px solid #8b4513;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #f8f1e4;
+            color: #4d2600;
+        }
+        .cake-details button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b4513;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cake-details button:hover {
+            background-color: #4d2600;
+        }
+        .cake-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cake-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+     <div class="container">
+        <div class="cake-details">
+            <h2 id="cake-title">Cake Details</h2>
+            <form id="order-form">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="message">Message on the Cake</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+
+                <label for="address">Delivery Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <input type="hidden" id="cake-name" name="cake-name">
+                <input type="hidden" id="cake-price" name="cake-price">
+
+                <button type="button" onclick="submitOrder()">Order Now</button>
+            </form>
+        </div>
+        <div class="cake-image">
+            <img id="cake-img" src="cakeImg.src" alt="Cake Image">
+        </div>
+    </div>
+
+    <script>
+        // Get URL parameters to determine which cake was clicked
+        const urlParams = new URLSearchParams(window.location.search);
+        const cakeName = urlParams.get('cake');
+        const cakePrices = {
+            'pull me up cake':500.00,
+            'half cakes':700.00,
+            'chocolate rasp dad':800.00,
+            'rasmalai':1000.00,
+            'brownie':1000.00,
+            'dream cake': 600.00,
+            'happy anni': 2000.00,
+            'cupcake':500.00,
+            'mango': 350.00,
+            'jarcake': 600.00,
+            'mousse': 2000.00,
+            'mother':500.00,
+            'red2': 350.00,
+            'personal cupcake':500.00,
+            'Cartoon Cakes': 350.00,
+
+            'cream cake':500.00,
+            'brown':700.00,
+            'red velvet':800.00,
+            'bomb cake':1000.00,
+            'pinata cake':1000.00,
+            'chococake': 600.00,
+            'gourmet': 2000.00,
+            'photopulling cake':500.00,
+            'fruit cake': 350.00
+        };
+
+        // Set the cake title and image based on the selected cake
+        document.getElementById('cake-title').innerText = cakeName;
+        document.getElementById('cake-name').value = cakeName;
+        document.getElementById('cake-price').value = cakePrices[cakeName];
+        const cakeImg = document.getElementById('cake-img');
+
+        switch (cakeName) {
+            case 'cream cake':
+                cakeImg.src = 'img/cream cake.webp';
+                cakeImg.alt = 'cream cake';
+                break;
+            case 'brown':
+                cakeImg.src = 'img/brown.webp';
+                cakeImg.alt = 'brown';
+                break;
+            case 'red velvet':
+                cakeImg.src = 'img/red velvet.webp';
+                cakeImg.alt = 'red velvet';
+                break; 
+            case 'bomb cake':
+                cakeImg.src = 'img/bomb cake.webp';
+                cakeImg.alt = 'bomb cake';
+                break; 
+            case 'pinata cake':
+                cakeImg.src = 'img/pinata cake.webp';
+                cakeImg.alt = 'pinata cake';
+                break; 
+            case 'chococake':
+                cakeImg.src = 'img/chococake.webp';
+                cakeImg.alt = 'chococake';
+                break; 
+            case 'gourmet':
+                cakeImg.src = 'img/gourmet.webp';
+                cakeImg.alt = 'gourmet';
+                break;
+            case 'photopulling cake':
+                cakeImg.src = 'img/photopulling cake.webp';
+                cakeImg.alt = 'photopulling cake';
+                break;
+            case 'fruit cake':
+                cakeImg.src = 'img/fruit cake.webp';
+                cakeImg.alt = 'fruit cake';
+                break;
+            case 'pull me up cake':
+                cakeImg.src = 'img/pull me up cake.webp';
+                cakeImg.alt = 'pull me up cake';
+                break;
+            case 'half cakes':
+                cakeImg.src = 'img/half cakes.webp';
+                cakeImg.alt = 'half cakes';
+                break;
+            case 'chocolate rasp dad':
+                cakeImg.src = 'img/chocolate rasp dad';
+                cakeImg.alt = 'chocolate rasp dad';
+                break; 
+            case 'rasmalai':
+                cakeImg.src = 'img/rasmalai.webp';
+                cakeImg.alt = 'rasmalai';
+                break; 
+            case 'brownie':
+                cakeImg.src = 'img/brownie.webp';
+                cakeImg.alt = 'brownie';
+                break; 
+            case 'dream cake':
+                cakeImg.src = 'img/dream cake.webp';
+                cakeImg.alt = 'dream cake';
+                break; 
+            case 'happy anni':
+                cakeImg.src = 'img/happy anni.webp';
+                cakeImg.alt = 'happy anni';
+                break;
+            case 'cupcake':
+                cakeImg.src = 'img/cupcake.webp';
+                cakeImg.alt = 'cupcake';
+                break;
+            case 'mango':
+                cakeImg.src = 'img/mango.webp';
+                cakeImg.alt = 'mango';
+                break;
+            case 'jarcake':
+                cakeImg.src = 'img/jarcake.webp';
+                cakeImg.alt = 'jarcake';
+                break;
+            case 'mousse':
+                cakeImg.src = 'img/mousse.webp';
+                cakeImg.alt = 'mousse';
+                break;
+            case 'mother':
+                cakeImg.src = 'img/mother.webp';
+                cakeImg.alt = 'mother';
+                break; 
+            case 'red2':
+                cakeImg.src = 'img/red2.webp';
+                cakeImg.alt = 'red2';
+                break; 
+            case 'personal cupcake':
+                cakeImg.src = 'img/personal cupcake.webp';
+                cakeImg.alt = 'personal cupcake';
+                break; 
+            case 'Cartoon Cakes':
+                cakeImg.src = 'img/Cartoon Cakes.webp';
+                cakeImg.alt = 'Cartoon Cakes';
+                break; 
+            
+            // Add cases for other cakes as needed
+            default:
+                cakeImg.src = '';
+                cakeImg.alt = 'Cake Image';
+                break;
+        }
+
+        function submitOrder() {
+            const weight = document.getElementById('weight').value;
+            const message = document.getElementById('message').value;
+            const address = document.getElementById('address').value;
+            const cakeName = document.getElementById('cake-name').value;
+            const cakePrice = document.getElementById('cake-price').value;
+
+            const queryString = `order-summary.html?cake-name=${encodeURIComponent(cakeName)}&weight=${encodeURIComponent(weight)}&message=${encodeURIComponent(message)}&address=${encodeURIComponent(address)}&cake-price=${encodeURIComponent(cakePrice)}`;
+
+            window.location.href = queryString;
+        }
+    </script>
+
+
+    
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-img text-secondary" style="margin-top: 135px">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 mt-lg-n5">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary border-inner p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>CakeZone</h1>
+                        </a>
+                        <p class="mt-3">Lorem diam sit erat dolor elitr et, diam lorem justo labore amet clita labore stet eos magna sit. Elitr dolor eirmod duo tempor lorem, elitr clita ipsum sea. Nonumy rebum et takimata ea takimata amet gubergren, erat rebum magna lorem stet eos. Diam amet et kasd eos duo dolore no.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h4 class="text-primary text-uppercase mb-4">Get In Touch</h4>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">123 Street, New York, USA</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+012 345 67890</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h4 class="text-primary text-uppercase mb-4">Quick Links</h4>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h4 class="text-primary text-uppercase mb-4">Newsletter</h4>
+                            <p>Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                    <button class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-secondary py-4" style="background: #111111;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
+			
+			<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+			Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

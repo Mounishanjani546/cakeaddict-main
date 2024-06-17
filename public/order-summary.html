@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #4d2600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+        .cake-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f1e4;
+            padding: 20px;
+        }
+        .cake-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .summary-container {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+        .summary-container h2 {
+            text-align: center;
+            color: #4d2600;
+        }
+        .summary-container p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #4d2600;
+        }
+        .summary-container .total {
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b4513;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #4d2600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cake-image">
+            <img id="cake-img" src="cakeImg.src" alt="Cake Image">
+        </div>
+        <div class="summary-container">
+            <h2>Order Summary</h2>
+            <p id="cake-name-summary"></p>
+            <p id="weight-summary"></p>
+            <p id="message-summary"></p>
+            <p id="address-summary"></p>
+            <p id="price-summary"></p>
+            <p class="total" id="total-summary"></p>
+            <div class="button-container">
+                <button onclick="navigateToOrderSuccess()">Cash on delivery</button>
+            </div>
+            <div class="button-container">
+                <button onclick="navigateToOrderPayment()">Pay now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const cakeName = urlParams.get('cake-name');
+        const weight = urlParams.get('weight');
+        const message = urlParams.get('message');
+        const address = urlParams.get('address');
+        const price = parseFloat(urlParams.get('cake-price'));
+
+        // Calculate total price
+        const totalPrice = (price * weight).toFixed(2);
+
+        // Display the order summary
+        document.getElementById('cake-name-summary').innerText = `Cake: ${cakeName}`;
+        document.getElementById('weight-summary').innerText = `Weight: ${weight} kg`;
+        document.getElementById('message-summary').innerText = `Message on Cake: ${message}`;
+        document.getElementById('address-summary').innerText = `Delivery Address: ${address}`;
+        document.getElementById('price-summary').innerText = `Price per kg: $${price}`;
+        document.getElementById('total-summary').innerText = `Total Price: $${totalPrice}`;
+
+        // Set the cake image based on the selected cake
+        const cakeImg = document.getElementById('cake-img');
+
+        switch (cakeName) {
+            case 'cream cake':
+                cakeImg.src = 'img/cream cake.webp';
+                cakeImg.alt = 'cream cake';
+                break;
+            case 'brown':
+                cakeImg.src = 'img/brown.webp';
+                cakeImg.alt = 'brown';
+                break;
+            case 'red velvet':
+                cakeImg.src = 'img/red velvet.webp';
+                cakeImg.alt = 'red velvet';
+                break; 
+            case 'bomb cake':
+                cakeImg.src = 'img/bomb cake.webp';
+                cakeImg.alt = 'bomb cake';
+                break; 
+            case 'pinata cake':
+                cakeImg.src = 'img/pinata cake.webp';
+                cakeImg.alt = 'pinata cake';
+                break; 
+            case 'chococake':
+                cakeImg.src = 'img/chococake.webp';
+                cakeImg.alt = 'chococake';
+                break; 
+            case 'gourmet':
+                cakeImg.src = 'img/gourmet.webp';
+                cakeImg.alt = 'gourmet';
+                break;
+            case 'photopulling cake':
+                cakeImg.src = 'img/photopulling cake.webp';
+                cakeImg.alt = 'photopulling cake';
+                break;
+            case 'fruit cake':
+                cakeImg.src = 'img/fruit cake.webp';
+                cakeImg.alt = 'fruit cake';
+                break;
+            case 'pull me up cake':
+                cakeImg.src = 'img/pull me up cake.webp';
+                cakeImg.alt = 'pull me up cake';
+                break;
+            case 'half cakes':
+                cakeImg.src = 'img/half cakes.webp';
+                cakeImg.alt = 'half cakes';
+                break;
+            case 'chocolate rasp dad':
+                cakeImg.src = 'img/chocolate rasp dad';
+                cakeImg.alt = 'chocolate rasp dad';
+                break; 
+            case 'rasmalai':
+                cakeImg.src = 'img/rasmalai.webp';
+                cakeImg.alt = 'rasmalai';
+                break; 
+            case 'brownie':
+                cakeImg.src = 'img/brownie.webp';
+                cakeImg.alt = 'brownie';
+                break; 
+            case 'dream cake':
+                cakeImg.src = 'img/dream cake.webp';
+                cakeImg.alt = 'dream cake';
+                break; 
+            case 'happy anni':
+                cakeImg.src = 'img/happy anni.webp';
+                cakeImg.alt = 'happy anni';
+                break;
+            case 'cupcake':
+                cakeImg.src = 'img/cupcake.webp';
+                cakeImg.alt = 'cupcake';
+                break;
+            case 'mango':
+                cakeImg.src = 'img/mango.webp';
+                cakeImg.alt = 'mango';
+                break;
+            case 'jarcake':
+                cakeImg.src = 'img/jarcake.webp';
+                cakeImg.alt = 'jarcake';
+                break;
+            case 'mousse':
+                cakeImg.src = 'img/mousse.webp';
+                cakeImg.alt = 'mousse';
+                break;
+            case 'mother':
+                cakeImg.src = 'mother.webp';
+                cakeImg.alt = 'mother';
+                break; 
+            case 'red2':
+                cakeImg.src = 'img/red2.webp';
+                cakeImg.alt = 'red2';
+                break; 
+            case 'personal cupcake':
+                cakeImg.src = 'img/personal cupcake.webp';
+                cakeImg.alt = 'personal cupcake';
+                break; 
+            case 'Cartoon Cakes':
+                cakeImg.src = 'img/Cartoon Cakes.webp';
+                cakeImg.alt = 'Cartoon Cakes';
+                break; 
+            // Add cases for other cakes as needed
+            default:
+                cakeImg.src = '';
+                cakeImg.alt = 'Cake Image';
+                break;
+        }
+        function navigateToOrderSuccess() {
+            window.location.href = 'order-success.html';
+        }
+        function navigateToOrderPayment() {
+            window.location.href = 'payment.html';
+        }
+    </script>
+</body>
+</html>
